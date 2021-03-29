@@ -1,0 +1,19 @@
+.modal {
+    .modal-body{
+        @include give-border(3px, $primary-color);
+        border-radius: 5px;
+    }
+    .form-box{
+        @include give-border(0,black);
+    }
+    textarea{
+        @include give-border(2px, $secondary-color);
+    }
+    .btn{
+        width: 80px;
+        
+    }
+    .btn-success{
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,17 @@
+.navbar {
+    background: $primary-color;
+
+    .navbar-brand {
+        color: #fff;
+        
+    }
+
+    .navbar-nav .nav-link {
+        color: #fff;
+        
+
+        &:hover {
+            color: lighten($color: $primary-color, $amount: 70);
+        }
+    }
+}

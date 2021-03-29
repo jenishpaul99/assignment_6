@@ -1,0 +1,12 @@
+.table{
+    border-radius: 5px;
+    text-align: center;
+    thead th{
+        background:$primary-color;
+        color: white;
+        text-transform: uppercase;
+    }
+    tbody td{
+        color: $secondary-color;
+    }
+}

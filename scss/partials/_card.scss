@@ -1,0 +1,30 @@
+.card{
+    @include give-border(4px,$primary-color);
+
+    button{
+        display: block;
+        background-color: $primary-color;
+        color: white;
+        @include give-border(3px,$secondary-color);
+        height: 45px;
+
+        &:hover{
+            background-color: $secondary-color;
+            @include give-border(3px,$primary-color);
+        }
+
+        @include responsive(sm) {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 200px;
+		}
+        // @include responsive(md) {
+		// 	overflow: hidden;
+        //     text-overflow: ellipsis;
+		// }
+        // @include responsive(xs) {
+		// 	overflow: hidden;
+        //     text-overflow: ellipsis;
+		// }
+    }
+}
